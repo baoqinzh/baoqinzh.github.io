@@ -1,4 +1,19 @@
 
-
+<button onclick = "getTextBook4()">幼儿汉语4</button>
 <a href="study-chinese/index.html">宝宝学汉字</a>
 <a href="study-chinese/youerhanyu4.html">幼儿汉语4</a>
+
+<script>
+  function getTextBook4() {
+  var params = [
+    'height=' + screen.height,
+    'width=750' + //screen.width,
+    'fullscreen=yes' + // only works in IE, but here for completeness
+    'scrollbars=no' +
+    'resizable=yes'
+  ].join(',');
+
+  var popup = window.open('youerhanyu4.html', 'popup_window', params);
+  popup.moveTo(0, 0);
+}
+</script>
